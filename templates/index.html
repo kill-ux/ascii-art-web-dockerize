@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 id="title">ASCII-ART-WEB</h1>
+    <form action="/ascii-art" method="post">
+        <div class="inputs">
+            <textarea name="text" class="inputText" rows="20" cols="50" required  maxlength="1500" placeholder="Enter your text...">{{ .Text}}</textarea>
+            <textarea id="test" class="outputText"  rows="20" cols="50"  disabled placeholder="Result..."></textarea>
+        </div>
+        <p id="err">{{.MessageError}}</p>
+        <br>
+        <div class="banners">
+        <input type="radio" name="banner" id="shadow" value="shadow" required>
+        <label for="shadow">Shadow</label>
+
+        <input type="radio" name="banner" id="standard" value="standard" checked required>
+        <label for="standard">Standard</label>
+
+        <input type="radio" name="banner" id="thinkertoy" value="thinkertoy" required>
+        <label for="thinkertoy">Thinkertoy</label>
+
+        <input type="radio" name="banner" id="chap" value="chap" required>
+        <label for="chap">Chap</label>
+    </div>
+        <br>
+        <input type="submit" value="Generate">
+    </form>
+    <script>
+        document.getElementById("test").innerHTML = "{{.Art}}"
+        switch ("{{ .Banner }}") {
+            case "shadow":
+                document.getElementById("shadow").checked = true;
+                break 
+            case "standard":
+                document.getElementById("standard").checked = true; 
+                break
+            case "thinkertoy":
+                document.getElementById("thinkertoy").checked = true; 
+                break;
+            case "chap":
+                document.getElementById("chap").checked = true; 
+                break;
+            default:
+                document.getElementById("standard").checked = true; 
+                break;
+        }
+    </script>
+</body>
+
+</html>

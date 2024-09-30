@@ -1,0 +1,103 @@
+html, body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background: linear-gradient(to bottom, #bdb6ad, #a69483); */
+    background-color: #bdb6ad;
+    color: white;
+     height: 100vh;
+    padding-top: 50px;
+    background-size:auto;
+}
+#err{
+    color: red;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin:0;
+    margin-bottom: 120px;
+}
+
+.inputs, .banners {
+    display: flex;   
+    justify-content: center;  
+    flex-wrap: wrap;      
+}
+.inputs{
+    width: 90%;
+}
+
+textarea {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 35px;
+    text-wrap: nowrap;
+    overflow: auto;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: whitesmoke;
+    width: 40%;
+    height: 100%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    opacity: 0.5;
+}
+
+input[type="submit"] {
+    width: 150px;
+    margin-top: 50px;
+    font-size: larger;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: bdb6ad;
+    border: none;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #c7beb3;
+    color: white;
+}
+
+input[type="submit"]:active {
+    background-color: #c7beb3;
+}
+
+input[type="radio"]:checked+label {
+    text-decoration: underline;
+    opacity: 1;
+}
+@media screen and (max-width:1000px){
+    textarea{
+        width: 80%;
+        
+        transition: width 0.5s ;
+    }
+
+    label {
+
+        font-size: large;
+       
+    }
+    
+}

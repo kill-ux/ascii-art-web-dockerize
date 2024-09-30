@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* Définit la police du corps */
+    background: linear-gradient(to bottom, #bdb6ad, #a69483);
+    /* Crée un dégradé de fond */
+    color: #333;
+    /* Couleur du texte */
+    display: flex;
+    /* Utilise Flexbox pour centrer le contenu */
+    flex-direction: column;
+    /* Aligne le contenu verticalement */
+    justify-content: center;
+    /* Centre le contenu verticalement */
+    align-items: center;
+    /* Centre le contenu horizontalement */
+    height: 100vh;
+    /* Prend toute la hauteur de la fenêtre */
+}
+
+h1 {
+    font-size: 100px;
+    /* Taille de la police pour le titre principal */
+    margin-bottom: 20px;
+    /* Marge inférieure pour espacer le titre du sous-titre */
+    color: white;
+    /* Couleur du texte pour le titre principal */
+}
+
+h2 {
+    font-size: 24px;
+    /* Taille de la police pour le sous-titre */
+    margin-bottom: 10px;
+    /* Marge inférieure pour espacer le sous-titre du paragraphe */
+    color: white;
+    /* Couleur du texte pour le sous-titre */
+}
+
+p {
+    font-size: 16px;
+    /* Taille de la police pour les paragraphes */
+    margin-bottom: 20px;
+    /* Marge inférieure pour espacer le paragraphe du bouton */
+}
+
+.home-button {
+    text-decoration: none;
+    /* Supprime le soulignement du lien */
+    background-color: #bdb6ad;
+    /* Couleur de fond pour le bouton */
+    color: white;
+    /* Couleur du texte pour le bouton */
+    padding: 10px 20px;
+    /* Ajoute un espacement interne au bouton */
+    border-radius: 5px;
+    /* Arrondit les coins du bouton */
+    transition: background-color 0.3s;
+    /* Animation lors du changement de couleur */
+}
+
+.home-button:hover {
+    background-color: #c7beb3;
+    /* Couleur de fond lors du survol du bouton */
+}
+
+@media screen and (max-width:1000px){
+    h1 {
+        font-size: 80px;
+        /* Taille de la police pour le titre principal */
+        margin-bottom: 20px;
+        /* Marge inférieure pour espacer le titre du sous-titre */
+        color: white;
+        /* Couleur du texte pour le titre principal */
+    }
+    
+    h2 {
+        font-size: 18px;
+        /* Taille de la police pour le sous-titre */
+        margin-bottom: 10px;
+        /* Marge inférieure pour espacer le sous-titre du paragraphe */
+        color: white;
+        /* Couleur du texte pour le sous-titre */
+    }
+    
+    p {
+        font-size: 12px;
+        /* Taille de la police pour les paragraphes */
+        margin-bottom: 20px;
+        /* Marge inférieure pour espacer le paragraphe du bouton */
+    }
+    
+}
